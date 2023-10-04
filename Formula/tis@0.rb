@@ -2,14 +2,14 @@
 # frozen_string_literal: true
 
 class TisAT0 < Formula
-  desc "A CLI for TIS API (v0.0.1-nightly+e6160be)"
+  desc "A CLI for TIS API (v0.0.1-nightly+c6cb9fd)"
   homepage "https://tis.tetrate.io"
-  version "0.0.1-n1696384026152" # v0.0.1-nightly+e6160be
+  version "0.0.1-n1696384681764" # v0.0.1-nightly+c6cb9fd
 
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/tis-system/artifacts/releases/download/nightly/cli_nightly_darwin_amd64.tar.gz"
-      sha256 "e4b001b6c932938919cab1d4dc2e661614b228010b347d5bb61d98994d4ba2f2"
+      sha256 "2abef55b9f74483739693594f95cfff17a0e057a39147f18a40d7cd53af6b1e0"
 
       def install
         bin.install "tis"
@@ -17,7 +17,7 @@ class TisAT0 < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/tis-system/artifacts/releases/download/nightly/cli_nightly_darwin_arm64.tar.gz"
-      sha256 "f4dd8905d34ef2dd88460ec770db50e7f52dd9c0da93a3f24f185f352ee2037c"
+      sha256 "b03144f7a153d974e13a483fd88d52a7b24196eb5b018163878ce270ef2858ed"
 
       def install
         bin.install "tis"
@@ -28,7 +28,7 @@ class TisAT0 < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/tis-system/artifacts/releases/download/nightly/cli_nightly_linux_amd64.tar.gz"
-      sha256 "06f6903e9e367f2634bb805e3332341f9b240840e2ef5678b183c14a4cb989ad"
+      sha256 "05d1a86891db2641b14642877dadc1a19d699bd51b6c3d9b0e80e5eddf81a101"
 
       def install
         bin.install "tis"
@@ -36,7 +36,7 @@ class TisAT0 < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/tis-system/artifacts/releases/download/nightly/cli_nightly_linux_arm64.tar.gz"
-      sha256 "1f02d9329bb67eb1a7b717976d3ff1ad9031b24be6c3ef49b49ca4d12a22b0e3"
+      sha256 "65fe6a67d65b731d3c7dc468489b708ee399671530609b242e3944aa39b71127"
 
       def install
         bin.install "tis"
